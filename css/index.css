@@ -1,0 +1,316 @@
+/* Reset styles */
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+
+ 
+  /* Navigation bar styling */
+  .navbar {
+    background-color: #31678d; /* 背景颜色 */
+    padding: 20px 20px; /* 内边距 */
+  }
+  
+  .nav-list {
+    display: flex; /* 横向排列 */
+    justify-content: center; /* 居中对齐 */
+    align-items: center; /* 垂直居中 */
+  }
+  
+  .nav-item {
+    margin: 0 40px; /* 每个导航项的间距 */
+  }
+  
+  .nav-item a {
+    color: white; /* 字体颜色 */
+    font-size: 18px; /* 字体大小 */
+    font-weight: bold; /* 字体加粗 */
+    transition: color 0.3s ease; /* 平滑过渡效果 */
+  }
+  
+  .nav-item a:hover {
+    color: #17507d; /* 鼠标悬停时的颜色 */
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .image-container .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 68px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    letter-spacing: 20px;
+  }
+  
+  section{
+    padding: 2% 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title{
+      width: 200px;
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+      background: #31678d;
+      padding: 10px 20px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      margin: 32px;
+  }
+  .jianjie-content::first-letter{
+      font-size: 3em; /* 放大首字母 */
+      font-weight: bold; /* 加粗首字母 */
+      color: #31678d; /* 首字母颜色 */
+      float: left; /* 让首字母浮动 */
+      margin-right: 10px; /* 与正文的间距 */
+      line-height: 1; /* 首字母的行高 */
+  }
+
+  .jingdian-container{
+    display: flex;
+  }
+  .flex1{
+    flex:1
+  }
+  .card {
+    cursor: pointer;
+    margin: 20px;
+    width: 300px;
+    border-radius: 12px; /* 倒角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影 */
+    overflow: hidden; /* 隐藏超出的部分 */
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card2 {
+    cursor: pointer;
+    margin: 20px;
+    width: 600px;
+    border-radius: 12px; /* 倒角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影 */
+    overflow: hidden; /* 隐藏超出的部分 */
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* 保持图片比例 */
+    transition: transform 0.3s ease; /* 添加平滑过渡效果 */
+
+  }
+
+  .card-content {
+    padding: 16px;
+    text-align: center;
+  }
+
+  .card-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  .card-description {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  .food-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 自适应网格 */
+    gap: 16px; /* 网格间距 */
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .food-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .food-item:hover {
+    transform: scale(1.05);
+  }
+
+  .food-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 确保图片适配网格 */
+    transition: opacity 0.3s ease;
+  }
+
+  .food-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6); /* 半透明背景 */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    transform: translateY(100%); /* 初始隐藏 */
+    transition: transform 0.3s ease;
+    font-size: 1.2em;
+  }
+
+  .food-item:hover .food-info {
+    transform: translateY(0); /* 悬停时滑动显示 */
+  }
+
+  .travel-container {
+    cursor: pointer;
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .travel-image {
+    flex: 1;
+  }
+
+  .travel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .travel-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .travel-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .travel-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+
+  .travel-content a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #17507d;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .travel-content a:hover {
+    background-color: #0056b3;
+  }
+
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+  }
+
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .footer-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f39c12;
+  }
+
+  .footer-content p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #bbb;
+  }
+
+  .footer-social {
+    margin-top: 10px;
+  }
+
+  .footer-social a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+
+  .footer-social a:hover {
+    color: #f39c12;
+  }
+
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+  }
+
+  /* 图标的模拟 */
+  .footer-social i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #555;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;
+  }
+
+  .card:hover img {
+    transform: scale(1.1); /* 鼠标悬浮时放大图片 */
+  }
+  .module-image{
+    display: flex;
+    justify-content: center;
+  }

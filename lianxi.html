@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>潍坊</title>
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    header {
+      color: black;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    .section-title {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: #31678d;
+    }
+
+    .message-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+    }
+
+    .message-item {
+      padding: 15px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .message-item:last-child {
+      border-bottom: none;
+    }
+
+    .message-item .username {
+      font-weight: bold;
+      color: #31678d;
+    }
+
+    .message-item .content {
+      margin-top: 5px;
+      line-height: 1.6;
+    }
+
+    .contact-form {
+      margin-top: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #31678d;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group button {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .form-group button {
+      background-color: #31678d;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-group button:hover {
+      background-color: #254a68;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="index.html">首页</a></li>
+      <li class="nav-item"><a href="jingdian.html">热门景点</a></li>
+      <li class="nav-item"><a href="meishi.html">美食小吃</a></li>
+      <li class="nav-item"><a href="lianxi.html">联系我们</a></li>
+    </ul>
+  </nav>
+  <div class="image-container">
+    <img src="images/banner.jpg" alt="Sample Image">
+    <div class="text">联系我们</div>
+  </div>
+
+  <div class="container">
+    <!-- 用户留言部分 -->
+    <section>
+      <h2 class="section-title">用户留言</h2>
+      <ul class="message-list">
+        <li class="message-item">
+          <span class="username">用户A:</span>
+          <p class="content">这个页面设计很不错！</p>
+        </li>
+        <li class="message-item">
+          <span class="username">用户B:</span>
+          <p class="content">希望能添加更多功能，比如查看留言详情。</p>
+        </li>
+        <li class="message-item">
+          <span class="username">用户C:</span>
+          <p class="content">非常喜欢这个配色，给人一种专业的感觉。</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 联系我们表单部分 -->
+    <section class="contact-form">
+      <h2 class="section-title">联系我们</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">姓名</label>
+          <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
+        </div>
+        <div class="form-group">
+          <label for="email">邮箱</label>
+          <input type="email" id="email" name="email" placeholder="请输入您的邮箱" required>
+        </div>
+        <div class="form-group">
+          <label for="message">留言内容</label>
+          <textarea id="message" name="message" placeholder="请输入您的留言内容" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">提交留言</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <h2>作者：wangtiantian</h2>
+        <p>感谢访问我的网页！希望你喜欢我提供的内容。如果有任何问题或建议，请随时联系我。</p>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2024 wangtiantian. All rights reserved.
+      </div>
+    </footer>
+</body>
+
+</html>

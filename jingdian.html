@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>潍坊</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <style>
+    /* 省略其他样式以节省空间，可以保留原有样式 */
+    /* 家乡特色模块样式 */
+    .jingdian-container {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      justify-content: center;
+    }
+
+    .section-title {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: #31678d;
+      text-align: center;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card-rating {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .card-rating span {
+      margin-right: 10px;
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .card:hover .card-description {
+      color: #004ea1;
+    }
+
+    .tese-container {
+      display: flex;
+      justify-content: center;
+	  height: 485px;
+	  
+    }
+
+    audio {
+      width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="index.html">网站首页</a></li>
+      <li class="nav-item"><a href="jingdian.html">热门景点</a></li>
+      <li class="nav-item"><a href="meishi.html">美食小吃</a></li>
+      <li class="nav-item"><a href="lianxi.html">联系我们</a></li>
+    </ul>
+  </nav>
+  <div class="image-container">
+    <img src="images\remenjd.jpg" alt="Sample Image" />
+    <div class="text">热门景点</div>
+  </div>
+  <div class="jingdian-container">
+    <div class="card-container">
+      <div class="card">
+        <img src="images\tzs.jpg" alt="Image" class="card-image" />
+        <div class="card-content">
+          <h3 class="card-title">天柱山世界地质公园</h3>
+          <div class="card-rating">
+            <span>4.8评分</span> <span>1365评价</span>
+          </div>
+          <p class="card-description">5A景区 峰雄洞幽 松奇石怪</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images\dbs.jpg" alt="Image" class="card-image" />
+        <div class="card-content">
+          <h3 class="card-title">大别山彩虹瀑布风景区</h3>
+          <div class="card-rating">
+            <span>4.4评分</span> <span>219评价</span>
+          </div>
+          <p class="card-description">4A景区 梦幻彩虹瀑布 森林氧吧</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images\mts.jpg" alt="Image" class="card-image" />
+        <div class="card-content">
+          <h3 class="card-title">明堂山风景名胜区</h3>
+          <div class="card-rating">
+            <span>4.5评分</span> <span>581评价</span>
+          </div>
+          <p class="card-description">4A景区 水域景观 天然氧吧 </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images\lhgy.jpg" alt="Image" class="card-image" />
+        <div class="card-content">
+          <h3 class="card-title">菱湖公园</h3>
+          <div class="card-rating">
+            <span>4.7评分</span> <span>225评价</span>
+          </div>
+          <p class="card-description">4A景区 盆景研究所 古典时光穿越</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images\wqnwby.jpg" alt="Image" class="card-image" />
+        <div class="card-content">
+          <h3 class="card-title">五千年文博园</h3>
+          <div class="card-rating">
+            <span>4.5评分</span> <span>512评价</span>
+          </div>
+          <p class="card-description">4A景区 一梦千年 十里画廊</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images\yjszft.jpg" alt="Image" class="card-image" />
+        <div class="card-content">
+          <h3 class="card-title">迎江寺振风塔</h3>
+          <div class="card-rating">
+            <span>4.8评分</span> <span>223评价</span>
+          </div>
+          <p class="card-description">文物古迹 万里长江第一塔</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">
+    <h2>家乡特色</h2>
+  </div>
+  <div class="tese-container">
+
+    <div class="card">
+      <img src="images/huangmeixi.webp" alt="黄梅戏" class="card-image" />
+      <div class="card-content">
+        <h3 class="card-title">黄梅戏</h3>
+        <p class="card-description">
+          黄梅戏是中国五大戏曲剧种之一，起源于湖北黄梅，发展壮大于安徽安庆。它以优美的旋律、生动的表演和贴近生活的题材深受观众喜爱。
+        </p>
+        <audio controls>
+          <source src="images\hmx.mp3" type="audio/mpeg">
+          您的浏览器不支持HTML5音频播放器。
+        </audio>
+      </div>
+    </div>
+	<div class="card2">
+		 <video src="./video/ff24e9ab1a846dc6f471fe3a51490f4b.mp4" controls  style="width: 600px; height: 445px;"></video>
+	</div>
+  </div>
+	
+  <footer>
+    <div class="footer-content">
+      <h2>作者：wangtiantian</h2>
+      <p>
+        感谢访问我的网页！希望你喜欢我提供的内容。如果有任何问题或建议，请随时联系我。
+      </p>
+    </div>
+   <div class="footer-bottom">
+        &copy; 2024 wangtiantian. All rights reserved.
+   </div>
+  </footer>
+</body>
+
+</html>

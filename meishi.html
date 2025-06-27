@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>潍坊</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .left {
+      flex: 1;
+      max-width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 140px;
+      /* 根据需要调整 */
+    }
+
+    .flip-container {
+      perspective: 1000px;
+      /* 为3D效果提供深度 */
+      width: 45%;
+      /* 根据需要调整 */
+      height: auto;
+    }
+
+    .flipper {
+      position: relative;
+      width:100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      /* 保留3D效果 */
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .flipper img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      backface-visibility: hidden;
+      /* 隐藏背面内容 */
+      position: absolute;
+      top: -145px;
+      left: 0px;
+    }
+
+    .front {
+      transform: rotateY(0deg);
+      /* 正面图片初始状态 */
+    }
+
+    .back {
+      transform: rotateY(180deg);
+      /* 背面图片初始状态 */
+    }
+
+    .flip-container:hover .flipper {
+      transform: rotateY(180deg);
+      /* 鼠标悬浮时翻转 */
+    }
+
+    .right {
+      flex: 1;
+      max-width: 50%;
+      background-color: #fff5e6;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	  margin-right: 300px;
+    }
+
+    .right h2 {
+      color: #ff704d;
+      margin-bottom: 10px;
+    }
+
+    .right ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .right ul li {
+      margin-bottom: 10px;
+    }
+
+    .right ul li strong {
+      color: #ff704d;
+    }
+
+    .restaurant-container {
+      padding: 20px;
+    }
+
+    .restaurant-list {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .restaurant {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 15px;
+      width: 60%;
+    }
+
+    .restaurant:last-child {
+      border-bottom: none;
+    }
+
+    .restaurant h2 {
+      color: #ff704d;
+      margin-bottom: 8px;
+    }
+
+    .restaurant p {
+      margin: 5px 0;
+    }
+
+    .restaurant-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    .restaurant-table th,
+    .restaurant-table td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .restaurant-table th {
+      background-color: #ff704d;
+      color: white;
+    }
+
+    .restaurant-table tr:hover {
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="index.html">首页</a></li>
+      <li class="nav-item"><a href="jingdian.html">热门景点</a></li>
+      <li class="nav-item"><a href="meishi.html">美食小吃</a></li>
+      <li class="nav-item"><a href="lianxi.html">联系我们</a></li>
+    </ul>
+  </nav>
+  <div class="image-container">
+    <img src="./images/793ed6681e0d12adabfb694f9c5fbd0.jpg" alt="Sample Image"/>
+    <div class="text">美食小吃</div>
+  </div>
+  <main class="container">
+    <div class="left">
+      <div class="flip-container">
+        <div class="flipper" style="left: 120px; top: -20px;">
+          <img src="images/7a6a1a59292f179d396036f54afdb27.jpg" alt="潍坊美食" class="front" >
+          <img src="images/0964f9409207397e26dd4364f9790c3.jpg" alt="背面图片" class="back"  >
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <h2>潍坊美食简介</h2>
+      <p>安庆地处长江中下游平原，河湖众多，物产丰富，为美食提供了丰富的食材。
+	  如太湖香酥鸭选用本地特有的麻鸭，潜山臭鳜鱼选用当地新鲜鳜鱼，枞阳媒鸭则是枞阳县的特产鸭子。 
+	  米面制品丰富：安庆的主食类美食丰富多样，不仅有以优质大米为原料制作的怀宁米粉、望江糯米饭，还有用面粉制作的宜秀板面、侉饼等。
+	  咸鲜为主：安庆美食以咸鲜口味为基础，讲究食材的原汁原味。如鸡汤泡炒米，用慢炖的鸡汤搭配香脆炒米，突出鸡汤的鲜美；山粉圆子烧肉，肉的咸香与山粉圆子的软糯结合，味道醇厚。口味多变：在以咸鲜为主的基础上，安庆美食也有麻辣、香辣、酸甜等多种口味。
+	  如安庆牛肉面，有麻辣、香辣、清汤等多种口味可供选择。</p>
+    </div>
+  </main>
+  <div style="text-align: center;">
+    <div class="title">美食推荐</div>
+  </div>
+
+  <div class="food-gallery">
+    <div class="food-item">
+      <img src="images/c5171cb106b8d0f21ba184fe8a70343.jpg" alt="shanfenyuanzishaorou" />
+      <div class="food-info">山粉圆子烧肉</div>
+    </div>
+    <div class="food-item">
+      <img src="images/b258d439c527370512dd26887601dc9.jpg" alt="jitangpaochaomi" />
+      <div class="food-info">鸡汤泡炒米
+      </div>
+    </div>
+    <div class="food-item">
+      <img src="images/67f2a9956762c2bf9caa167b1a61877.jpg" alt="niuroujianbao" />
+      <div class="food-info">牛肉煎包
+      </div>
+    </div>
+    <div class="food-item">
+      <img src="images/d4b7d28884d18806389c5368429c310.jpg" alt="shuiqiuba" />
+      <div class="food-info">水萩粑
+      </div>
+    </div>
+	<div class="food-item">
+	  <img src="images/84fa608c8a47a191ff899aa784525bd.jpg" alt="niuroulamian" />
+	  <div class="food-info">牛肉拉面
+	  </div>
+	</div>
+  </div>
+  <div style="text-align: center;">
+    <div class="title">饭店推荐</div>
+  </div>
+
+  <main class="restaurant-container">
+    <table class="restaurant-table">
+      <thead>
+        <tr>
+          <th>饭店名称</th>
+          <th>地址</th>
+          <th>推荐理由</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>潍坊老字号饭店</td>
+          <td>潍坊市奎文区新华路123号</td>
+          <td>以正宗的潍坊特色菜闻名，特别是招牌肉火烧和酱爆鸡丁，是外地游客的必去之选。</td>
+        </tr>
+        <tr>
+          <td>风筝楼酒家</td>
+          <td>潍坊市寒亭区东风街456号</td>
+          <td>装修古朴，菜品地道，招牌菜风筝面条和香辣大虾深受食客好评。</td>
+        </tr>
+        <tr>
+          <td>寿光绿色蔬菜宴</td>
+          <td>潍坊市寿光市人民路789号</td>
+          <td>主打新鲜绿色的蔬菜料理，营养健康，适合家庭聚餐或朋友小聚。</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <h2>作者：wangtiantian</h2>
+      <p>
+        感谢访问我的网页！希望你喜欢我提供的内容。如果有任何问题或建议，请随时联系我。
+      </p>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 wangtiantian. All rights reserved.
+		</div>
+  </footer>
+</body>
+
+</html>
